@@ -2,6 +2,8 @@
 
 This project is a MqMessage broker and its console that can be used to send and receive messages between different services.
 
+![Home Page](res/Home.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -301,6 +303,10 @@ export default ENV;
 ### Angular Client
 
 Go to the `frontend/` directory and run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+![Table](res/Table.png)
+
+![Preferences](res/Preferences.png)
 
 ### Code scaffolding
 
