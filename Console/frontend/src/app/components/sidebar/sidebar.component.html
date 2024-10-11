@@ -1,0 +1,207 @@
+<p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+  <ng-template pTemplate="headless">
+    <div class="flex flex-column h-full">
+      <div class="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
+        <span class="inline-flex align-items-center gap-2">
+          <img src="img/logo.png" alt="logo" class="h-2rem rounded" />
+          <span class="font-semibold text-2xl">Broker Console</span>
+        </span>
+        <span>
+          <p-button
+            type="button"
+            (onClick)="closeCallback($event)"
+            icon="pi pi-times"
+            rounded="true"
+            outlined="true"
+            styleClass="h-2rem w-2rem"
+          ></p-button>
+        </span>
+      </div>
+      <div class="overflow-y-auto">
+        <ul class="list-none p-3 m-0">
+          <li>
+            <div
+              pRipple
+              pStyleClass="@next"
+              enterFromClass="hidden"
+              enterActiveClass="slidedown"
+              leaveToClass="hidden"
+              leaveActiveClass="slideup"
+              class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer p-ripple"
+            >
+              <span class="font-medium">DASHBOARD</span>
+              <i class="pi pi-chevron-down"></i>
+            </div>
+            <ul class="list-none p-0 m-0 overflow-hidden">
+              <li>
+                <a
+                  pRipple
+                  class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                  [ngClass]="{
+                    'bg-blue-500 text-white': isActive('/dashboard')
+                  }"
+                  routerLink="/dashboard"
+                >
+                  <i class="pi pi-home mr-2"></i>
+                  <span class="font-medium">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  pRipple
+                  class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                  routerLink="/alerts"
+                  [ngClass]="{
+                    'bg-blue-500 text-white': isActive('/alerts')
+                  }"
+                >
+                  <i class="pi pi-comments mr-2"></i>
+                  <span class="font-medium">Alerts</span>
+                  <span
+                    class="inline-flex align-items-center justify-content-center ml-auto bg-primary border-circle"
+                    style="min-width: 1.5rem; height: 1.5rem"
+                    >{{ alertCount }}</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="list-none p-3 m-0">
+          <li>
+            <div
+              pRipple
+              pStyleClass="@next"
+              enterFromClass="hidden"
+              enterActiveClass="slidedown"
+              leaveToClass="hidden"
+              leaveActiveClass="slideup"
+              class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer p-ripple"
+            >
+              <span class="font-medium">APPLICATION</span>
+              <i class="pi pi-chevron-down"></i>
+            </div>
+            <ul class="list-none p-0 m-0 overflow-hidden">
+              <li>
+                <a
+                  pRipple
+                  class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                  routerLink="/performances"
+                >
+                  <i class="pi pi-chart-bar mr-2"></i>
+                  <span class="font-medium">Performances</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  pRipple
+                  pStyleClass="@next"
+                  enterFromClass="hidden"
+                  enterActiveClass="slidedown"
+                  leaveToClass="hidden"
+                  leaveActiveClass="slideup"
+                  class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                >
+                  <i class="pi pi-cog mr-2"></i>
+                  <span class="font-medium">Settings</span>
+                  <i class="pi pi-chevron-down ml-auto"></i>
+                </a>
+                <ul
+                  class="list-none py-0 pl-3 pr-0 m-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out"
+                >
+                  <li>
+                    <a
+                      pRipple
+                      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                      routerLink="/settings/routing-properties"
+                      [ngClass]="{
+                        'bg-blue-500 text-white': isActive('/settings/routing-properties')
+                      }"
+                    >
+                      <i class="pi pi-sitemap mr-2"></i>
+                      <span class="font-medium">Routing Properties</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      pRipple
+                      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                      routerLink="/settings/application-properties"
+                      [ngClass]="{
+                        'bg-blue-500 text-white': isActive('/settings/application-properties')
+                      }"
+                    >
+                      <i class="pi pi-objects-column mr-2"></i>
+                      <span class="font-medium">Application Properties</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      pRipple
+                      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                      routerLink="/settings/routes"
+                      [ngClass]="{
+                        'bg-blue-500 text-white': isActive('/settings/routes')
+                      }"
+                    >
+                      <i class="pi pi-folder-plus mr-2"></i>
+                      <span class="font-medium">Routes</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      pRipple
+                      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                      routerLink="/settings/preferences"
+                      [ngClass]="{
+                        'bg-blue-500 text-white': isActive('/settings/preferences')
+                      }"
+                    >
+                      <i class="pi pi-book mr-2"></i>
+                      <span class="font-medium">Preferences</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-auto">
+        <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
+        <a
+          pRipple
+          class="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+        >
+          <i class="pi pi-user mr-2"></i>
+          <span class="font-bold">{{ username }}</span>
+        </a>
+        <!-- Disconnect button -->
+        <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
+        <a
+          pRipple
+          class="ml-6 -mt-5 flex align-items-center cursor-pointer p-3 gap-2 p-ripple"
+          (click)="disconnect()"
+        >
+          <p-button
+            pRipple
+            type="button"
+            label="Disconnect"
+            icon="pi pi-power-off"
+            styleClass="m-3 text-700"
+            outlined="true"
+            severity="danger"
+          ></p-button>
+        </a>
+      </div>
+    </div>
+  </ng-template>
+</p-sidebar>
+<p-button
+  (onClick)="sidebarVisible = true"
+  icon="pi pi-bars"
+  pTooltip="Press Alt + Enter to toggle sidebar"
+  showDelay="300"
+  tooltipPosition="right"
+></p-button>

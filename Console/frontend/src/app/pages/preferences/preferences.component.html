@@ -1,0 +1,98 @@
+<app-page-template page_title="PPF Broker Console - Settings Preferences">
+  <div style="padding: 20px 100px">
+    <div>
+      <h2 class="text-2xl text-gray-800 mb-5">Hover on logs table</h2>
+      <div class="card" style="display: flex; align-items: center">
+        <p-inputSwitch
+          inputId="destinationInfoSwitch"
+          [(ngModel)]="destinationInfoOnHover"
+          (onChange)="toggleDestinationInfoOnHover()"
+          class="mr-4"
+        />
+        <label>
+          Destination Info on Hover -
+          <br /><small>Display destination information on hover on the Logs Table</small>
+        </label>
+      </div>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <p-inputSwitch
+          inputId="messageBoxOnHover"
+          [(ngModel)]="messageBoxOnHover"
+          (onChange)="toggleMessageBoxOnHover()"
+          class="mr-4"
+        />
+        <label>
+          Message Box on Hover -
+          <br /><small>Display the whole message on hover on the Logs Table</small>
+        </label>
+      </div>
+    </div>
+    <hr class="my-6" />
+    <div>
+      <h2 class="text-2xl text-gray-800 mb-5">Auto-Refresh</h2>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <p-inputSwitch
+          inputId="autoRefreshLogs"
+          [(ngModel)]="autoRefreshLogs"
+          (onChange)="toggleAutoRefreshLogs()"
+          class="mr-4"
+        />
+        <label>
+          Auto Refresh Logs -
+          <br /><small
+            >Refresh every {{ REFRESH_TIME_SECONDS }} seconds, otherwise manually refresh for the
+            latest logs.
+          </small>
+        </label>
+      </div>
+    </div>
+
+    <hr class="my-6" />
+
+    <div>
+      <h2 class="text-2xl text-gray-800 mb-5">Shortcuts</h2>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <div class="keyswitches mr-4">
+          <div class="key">Alt</div>
+          <p class="text-xl text-gray-800 mx-2 mt-1" style="font-weight: bold">+</p>
+          <div class="key">Enter</div>
+        </div>
+        <label> Open Sidebar Menu </label>
+      </div>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <div class="keyswitches mr-4">
+          <div class="key">Alt</div>
+          <p class="text-xl text-gray-800 mx-2 mt-1" style="font-weight: bold">+</p>
+          <div class="key">D</div>
+        </div>
+        <label> Open Dashboard </label>
+      </div>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <div class="keyswitches mr-4">
+          <div class="key">Alt</div>
+          <p class="text-xl text-gray-800 mx-2 mt-1" style="font-weight: bold">+</p>
+          <div class="key">A</div>
+        </div>
+        <label> Open Alerts </label>
+      </div>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <div class="keyswitches mr-4">
+          <div class="key">Alt</div>
+          <p class="text-xl text-gray-800 mx-2 mt-1" style="font-weight: bold">+</p>
+          <div class="key">R</div>
+        </div>
+        <label> Open Routes </label>
+      </div>
+      <div class="card mt-5" style="display: flex; align-items: center">
+        <div class="keyswitches mr-4">
+          <div class="key">Alt</div>
+          <p class="text-xl text-gray-800 mx-2 mt-1" style="font-weight: bold">+</p>
+          <div class="key">P</div>
+        </div>
+        <label> Open the Dashboard </label>
+      </div>
+    </div>
+
+    <hr class="my-6" />
+  </div>
+</app-page-template>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <!-- Logging Properties -->
+    <Properties>
+        <Property name="HUMAN_LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %p %m%n</Property>
+        <Property name="SYSTEM_LOG_PATTERN">%d{UNIX} %p %m%n</Property>
+        <Property name="STORAGE_MQID_FILEPATH_PATTERN">%m%n</Property>
+        <Property name="APP_LOG_ROOT">D:/Users/ephilipp/Desktop/Broker/logs</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${HUMAN_LOG_PATTERN}"/>
+        </Console>
+        <!--
+        =================== File Appenders ====================
+        Readability: H -> Human readable, S -> System readable
+        A system readable log is a log that is not intended to be read by humans, but by machines so the easier to parse the better.
+        Name convention: [name][H/S]Log
+        Everything under APP_LOG_ROOT/app contains only human-readable logs, everything under APP_LOG_ROOT/system contains only system readable logs
+        =======================================================
+         -->
+
+        <!--
+        ###########################################
+        # - **Misc Info App Log**
+        # - HUMAN_READABLE
+        # - INFO -> FATAL
+        # - Max file size: 10MB
+        # - Max files: 10
+        #########################################
+        -->
+        <RollingFile name="appHLog" fileName="${APP_LOG_ROOT}/app/app.log" filePattern="${APP_LOG_ROOT}/app/app-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${HUMAN_LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!--
+        ###########################################
+        # - **Routing only info Log**
+        # - HUMAN_READABLE
+        # - INFO -> ERROR
+        # - Max file size: 10MB
+        # - Max files: 10
+        #########################################
+        -->
+        <RollingFile name="routerHLog" fileName="${APP_LOG_ROOT}/app/routing.log"
+                     filePattern="${APP_LOG_ROOT}/app/routing-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${HUMAN_LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!--
+        ###########################################
+        # - **Debug purpose only**
+        # - HUMAN_READABLE
+        # - DEBUG
+        # - Max file size: 1MB
+        # - Max files: 5
+        #########################################
+        -->
+        <RollingFile name="appHDebug" fileName="${APP_LOG_ROOT}/app/debug.log"
+                     filePattern="${APP_LOG_ROOT}/app/debug-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${HUMAN_LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+
+        <!--
+         DO NOT TOUCH BY ANY MEANS, CAN BREAK THE WHOLE APP LOGGING SYSTEM
+         ###########################################
+        # - **Routing logs for the broker to serves **
+        # - SYSTEM_READABLE
+        # - INFO -> ERROR
+        # - Max file size: 25MB
+        # - Max files: 10
+        #########################################
+        DO NOT TOUCH BY ANY MEANS, CAN BREAK THE WHOLE APP LOGGING SYSTEM
+         -->
+        <RollingFile name="routerSLog" fileName="${APP_LOG_ROOT}/system/routing.log"
+                     filePattern="${APP_LOG_ROOT}/system/routing-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${SYSTEM_LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="25MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!--
+         DO NOT TOUCH BY ANY MEANS, CAN BREAK THE WHOLE APP LOGGING SYSTEM
+         ###########################################
+        # - **Using log4j as a standalone storage for the relation between the Mq Message Id and their respective file path **
+        # - SYSTEM_READABLE
+        # - INFO -> INFO
+        # - Max file size: 25MB
+        # - Max files: 10
+        #########################################
+        DO NOT TOUCH BY ANY MEANS, CAN BREAK THE WHOLE BROKER SYSTEM
+         -->
+        <RollingFile name="routerMqFilePath" fileName="${APP_LOG_ROOT}/system/mqfile.log"
+                     filePattern="${APP_LOG_ROOT}/system/mqfile-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${STORAGE_MQID_FILEPATH_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="25MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <!-- <AppenderRef ref="appHDebug"/> -->
+        </Root>
+
+        <Logger name="broker" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="appHLog"/>
+        </Logger>
+
+        <Logger name="broker.routing" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="routerSLog"/>
+            <AppenderRef ref="routerHLog"/>
+        </Logger>
+
+        <Logger name="broker.storage.mqFile" level="INFO" additivity="false">
+            <AppenderRef ref="routerMqFilePath"/>
+        </Logger>
+    </Loggers>
+
+</Configuration>

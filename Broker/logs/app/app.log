@@ -1,0 +1,230 @@
+
+2024-09-20T14:17:49.769+0200 INFO 507 routes loaded from API
+2024-09-20T14:18:51.932+0200 INFO 507 routes loaded from API
+2024-09-20T14:18:53.252+0200 WARN A routing log line is corrupted: 1726834687 INFO ID:414d51204332303220202020202020206324a1661f05594a Completed forwarding message ;clientId=EPE002;transfertTime=0;destination=EPETGT2;from=API;
+2024-09-20T14:20:43.450+0200 INFO 507 routes loaded from API
+2024-09-20T14:21:43.347+0200 INFO 507 routes loaded from API
+2024-09-20T15:02:18.025+0200 INFO 507 routes loaded from API
+2024-09-20T15:02:58.212+0200 INFO 507 routes loaded from API
+2024-09-20T15:04:02.427+0200 INFO 507 routes loaded from API
+2024-09-20T15:04:33.620+0200 INFO 507 routes loaded from API
+2024-09-20T15:05:49.499+0200 INFO 507 routes loaded from API
+2024-09-20T15:09:35.274+0200 INFO 507 routes loaded from API
+2024-09-20T15:11:19.369+0200 INFO 507 routes loaded from API
+2024-09-20T15:14:43.657+0200 INFO 507 routes loaded from API
+2024-09-20T16:03:24.131+0200 INFO 507 routes loaded from API
+2024-10-04T10:39:35.890+0200 INFO 508 routes loaded from API
+2024-10-04T10:51:13.176+0200 INFO 508 routes loaded from API
+2024-10-04T10:51:49.247+0200 INFO 508 routes loaded from API
+2024-10-04T10:52:40.278+0200 INFO 508 routes loaded from API
+2024-10-04T10:53:58.822+0200 INFO 508 routes loaded from API
+2024-10-04T10:59:00.565+0200 INFO 508 routes loaded from API
+2024-10-04T11:00:23.603+0200 INFO 508 routes loaded from API
+2024-10-04T11:03:02.125+0200 INFO 508 routes loaded from API
+2024-10-04T11:16:13.038+0200 INFO 508 routes loaded from API
+2024-10-04T11:17:56.759+0200 INFO 508 routes loaded from API
+2024-10-04T11:19:15.528+0200 INFO 508 routes loaded from API
+2024-10-04T16:47:18.782+0200 INFO 508 routes loaded from API
+2024-10-04T16:47:56.002+0200 INFO 508 routes loaded from API
+2024-10-04T17:35:37.459+0200 INFO 508 routes loaded from API
+2024-10-04T19:56:34.746+0200 INFO 508 routes loaded from API
+2024-10-04T20:14:20.782+0200 INFO 508 routes loaded from API
+2024-10-04T20:21:30.154+0200 INFO 508 routes loaded from API
+2024-10-04T20:21:47.093+0200 INFO 508 routes loaded from API
+2024-10-04T22:05:22.287+0200 INFO 508 routes loaded from API
+2024-10-04T23:09:42.327+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:21:08.283+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:26:23.171+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:29:08.393+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:30:01.062+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:31:51.057+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:36:47.841+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:41:05.622+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:44:17.089+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:48:05.208+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:48:46.076+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:50:35.664+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:51:50.740+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:52:29.925+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-04T23:53:47.858+0200 INFO API Routes are down, loaded 507 routes from memory
+2024-10-05T09:35:30.718+0200 INFO 508 routes loaded from API
+2024-10-05T09:56:51.682+0200 INFO 508 routes loaded from API
+2024-10-05T09:57:40.517+0200 INFO 508 routes loaded from API
+2024-10-05T09:59:34.837+0200 INFO 508 routes loaded from API
+2024-10-05T10:00:33.175+0200 INFO 508 routes loaded from API
+2024-10-05T10:04:33.615+0200 INFO 508 routes loaded from API
+2024-10-05T10:06:25.953+0200 INFO 508 routes loaded from API
+2024-10-05T10:08:44.954+0200 INFO 508 routes loaded from API
+2024-10-05T11:24:14.737+0200 INFO 508 routes loaded from API
+2024-10-05T12:01:58.151+0200 INFO 508 routes loaded from API
+2024-10-05T12:07:37.385+0200 INFO 508 routes loaded from API
+2024-10-05T12:14:03.815+0200 INFO 508 routes loaded from API
+2024-10-05T13:10:52.443+0200 INFO 508 routes loaded from API
+2024-10-05T15:17:28.388+0200 INFO 508 routes loaded from API
+2024-10-05T15:18:59.419+0200 INFO 508 routes loaded from API
+2024-10-05T15:21:07.872+0200 INFO 508 routes loaded from API
+2024-10-05T15:23:15.933+0200 INFO 508 routes loaded from API
+2024-10-05T15:23:34.088+0200 INFO 508 routes loaded from API
+2024-10-05T15:24:46.819+0200 INFO 508 routes loaded from API
+2024-10-05T15:24:48.651+0200 INFO 508 routes loaded from API
+2024-10-05T15:25:21.639+0200 INFO 508 routes loaded from API
+2024-10-05T15:36:13.509+0200 INFO 508 routes loaded from API
+2024-10-05T20:54:24.063+0200 INFO 508 routes loaded from API
+2024-10-06T10:58:14.937+0200 INFO 508 routes loaded from API
+2024-10-06T13:15:58.459+0200 INFO 508 routes loaded from API
+2024-10-06T17:52:28.344+0200 INFO 508 routes loaded from API
+2024-10-07T10:39:59.675+0200 INFO 508 routes loaded from API
+2024-10-08T09:14:15.518+0200 INFO 508 routes loaded from API
+2024-10-08T10:11:22.394+0200 INFO 508 routes loaded from API
+2024-10-08T11:58:19.957+0200 INFO 508 routes loaded from API
+2024-10-08T14:31:53.986+0200 INFO 508 routes loaded from API
+2024-10-08T14:32:38.447+0200 INFO 508 routes loaded from API
+2024-10-08T14:33:18.925+0200 INFO 508 routes loaded from API
+2024-10-08T14:35:02.301+0200 INFO 508 routes loaded from API
+2024-10-09T09:00:46.972+0200 INFO 508 routes loaded from API
+2024-10-09T09:53:18.597+0200 INFO 508 routes loaded from API
+2024-10-09T09:54:00.293+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:54:30.290+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:55:00.309+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:55:43.900+0200 INFO 508 routes loaded from API
+2024-10-09T09:56:23.722+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:56:45.946+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:56:45.949+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:56:46.042+0200 WARN A routing log line is corrupted: 1728460412 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+2024-10-09T09:56:56.396+0200 INFO 508 routes loaded from API
+2024-10-09T09:59:49.087+0200 INFO 508 routes loaded from API
+2024-10-09T10:02:31.780+0200 INFO 508 routes loaded from API
+2024-10-09T10:02:49.876+0200 INFO 508 routes loaded from API
+2024-10-09T10:05:25.260+0200 INFO 508 routes loaded from API
+2024-10-09T10:05:37.368+0200 INFO 508 routes loaded from API
+2024-10-09T10:06:06.806+0200 INFO 508 routes loaded from API
+2024-10-09T10:13:00.627+0200 INFO 508 routes loaded from API
+2024-10-09T10:13:38.169+0200 INFO 508 routes loaded from API
+2024-10-09T10:14:08.258+0200 INFO 508 routes loaded from API
+2024-10-09T10:14:41.827+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:41.854+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:41.877+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:41.924+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:55.777+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:55.796+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:55.805+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:14:55.860+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:16.283+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:16.294+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:16.319+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:16.385+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:27.309+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:27.322+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:27.328+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:27.402+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:15:57.316+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:16:27.318+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:16:57.318+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:17:35.671+0200 INFO 508 routes loaded from API
+2024-10-09T10:17:52.929+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:17:53.049+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:17:53.061+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:17:53.076+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:18:22.760+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:18:43.386+0200 INFO 508 routes loaded from API
+2024-10-09T10:18:51.405+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:18:53.055+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:18:55.823+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:18:55.832+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:19:03.173+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:19:03.196+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:19:03.204+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:19:03.279+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:19:33.181+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:20:02.830+0200 INFO 508 routes loaded from API
+2024-10-09T10:22:39.034+0200 INFO 508 routes loaded from API
+2024-10-09T10:22:49.547+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:54.912+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:55.472+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:57.358+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:59.640+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:59.651+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:23:59.661+0200 WARN A routing log line is corrupted: 1728461668 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1726733287255
+2024-10-09T10:24:12.887+0200 INFO 508 routes loaded from API
+2024-10-09T10:24:39.463+0200 INFO 508 routes loaded from API
+2024-10-09T10:32:41.381+0200 INFO 508 routes loaded from API
+2024-10-09T10:33:25.358+0200 INFO 508 routes loaded from API
+2024-10-09T11:06:59.289+0200 INFO 508 routes loaded from API
+2024-10-09T11:12:09.239+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from
+2024-10-09T11:12:39.240+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:09.238+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:46.076+0200 INFO 508 routes loaded from API
+2024-10-09T11:13:47.262+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:47.263+0200 WARN A routing log line is corrupted: 1728462826 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1628139163
+2024-10-09T11:13:47.379+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:47.379+0200 WARN A routing log line is corrupted: 1728462826 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1628139163
+2024-10-09T11:13:47.389+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:47.389+0200 WARN A routing log line is corrupted: 1728462826 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1628139163
+2024-10-09T11:13:47.401+0200 WARN A routing log line is corrupted: 1728464301 INFO ID:414d51204332303220202020202020206324a1661771fc4d Completed forwarding message after a new try attempt ;transfertTime=335990;destination=EPETGT5;from=Manual
+2024-10-09T11:13:47.401+0200 WARN A routing log line is corrupted: 1728462826 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1628139163
+2024-10-09T11:14:26.946+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:14:26.955+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:14:26.969+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:14:27.055+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:14:56.955+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:03.338+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:03.348+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:03.368+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:03.435+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:22.973+0200 INFO 508 routes loaded from API
+2024-10-09T11:15:33.466+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:15:59.368+0200 INFO 508 routes loaded from API
+2024-10-09T11:16:03.187+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:03.342+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:03.353+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:03.369+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:42.553+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:55.088+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;fromManual
+2024-10-09T11:16:58.441+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:16:58.441+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:16:59.471+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:17:08.561+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:17:08.576+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:17:08.585+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:17:08.639+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:17:23.498+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:23.765+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:23.770+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:23.772+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:23.798+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:23.828+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:33.775+0200 INFO 508 routes loaded from API
+2024-10-09T11:18:37.765+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:37.865+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:37.875+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:37.883+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:41.298+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:41.306+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:41.325+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:18:41.401+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:19:11.553+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:19:12.758+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:19:12.758+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:19:12.968+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:19:24.845+0200 INFO 508 routes loaded from API
+2024-10-09T11:20:24.381+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:25.774+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:26.544+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:27.855+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:28.659+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:29.777+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:20:40.621+0200 INFO 508 routes loaded from API
+2024-10-09T11:21:56.138+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:21:56.881+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:21:57.136+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:21:57.964+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:21:58.786+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:22:01.070+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:22:13.354+0200 WARN A routing log line is corrupted: 1728465263 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1630576051;destination=EPETGT1;from=Manual
+2024-10-09T11:22:41.568+0200 INFO 508 routes loaded from API
+2024-10-09T11:43:08.732+0200 INFO 508 routes loaded from API
+2024-10-09T13:40:04.023+0200 INFO 508 routes loaded from API
+2024-10-10T09:04:30.957+0200 INFO 508 routes loaded from API
+2024-10-10T14:45:12.580+0200 INFO 508 routes loaded from API
+2024-10-10T15:41:30.136+0200 INFO 508 routes loaded from API
+2024-10-10T15:48:33.354+0200 INFO 508 routes loaded from API

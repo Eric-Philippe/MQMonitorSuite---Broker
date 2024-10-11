@@ -1,0 +1,176 @@
+<p-toast />
+<div class="card justify-center p-6">
+  <p-dialog
+    header="Manually resend failed message"
+    [(visible)]="resentModalVisible"
+    [modal]="true"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+    [style]="{
+      width: '50vw',
+      height: '45vh',
+    }"
+    [maximizable]="true"
+  >
+    <p class="text-gray-700 mb-4">
+      Select the new route for the failed message, or pick the 'Try automatic routing' option to let
+      the system try itself
+    </p>
+    <div class="card flex mt-6 mb-6">
+      <p-floatLabel>
+        <p-dropdown
+          id="destination"
+          [options]="destinations"
+          [(ngModel)]="selectedDestination"
+          optionLabel="key"
+          placeholder="Select destination"
+          class="w-full"
+        />
+        <label for="destination" class="text-gray-600">Route</label>
+      </p-floatLabel>
+    </div>
+    <!-- Inputs -->
+    <div
+      class="card flex mt-4"
+      *ngIf="selectedDestination && selectedDestination.key === 'Try automatic routing'"
+    >
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+        (click)="send()"
+      >
+        Try automatic routing
+      </button>
+    </div>
+    <div *ngIf="routePropertiesAvailable()">
+      <div class="card flex flex-column md:flex-row gap-2">
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="q"
+            [(ngModel)]="destinationProps.q"
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="q" class="text-gray-600">Q:</label>
+        </p-floatLabel>
+
+        <p-floatLabel class="w-1/6">
+          <input
+            pInputText
+            type="text"
+            id="qm"
+            [(ngModel)]="destinationProps.qm"
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="qm" class="text-gray-600">QM:</label>
+        </p-floatLabel>
+
+        <p-floatLabel class="w-2/6">
+          <input
+            pInputText
+            type="text"
+            id="protocole"
+            [(ngModel)]="destinationProps.protocole"
+            class="border border-gray-300 rounded p-2"
+          />
+          <label for="protocole" class="text-gray-600">Protocole: </label>
+        </p-floatLabel>
+      </div>
+      <div class="card flex flex-column md:flex-row gap-2 mt-6">
+        <p-floatLabel class="w-full">
+          <input
+            pInputText
+            type="text"
+            id="host"
+            [(ngModel)]="destinationProps.host"
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="host" class="text-gray-600">Host:</label>
+        </p-floatLabel>
+
+        <p-floatLabel class="w-2/12">
+          <input
+            pInputText
+            type="text"
+            id="port"
+            [(ngModel)]="destinationProps.port"
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="port" class="text-gray-600">Port:</label>
+        </p-floatLabel>
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="channel"
+            [(ngModel)]="destinationProps.channel"
+            class="border border-gray-300 rounded p-2"
+          />
+          <label for="channel" class="text-gray-600">Channel:</label>
+        </p-floatLabel>
+      </div>
+
+      <hr class="my-4" />
+
+      <h5 class="text-gray-700">Message -</h5>
+
+      <div class="card flex flex-column md:flex-row gap-2 mt-6">
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="clientId"
+            [(ngModel)]="msg.clientId"
+            disabled
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="clientId" class="text-gray-600">ClientId</label>
+        </p-floatLabel>
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="workId"
+            [(ngModel)]="msg.workId"
+            disabled
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="workId" class="text-gray-600">WorkId</label>
+        </p-floatLabel>
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="companyId"
+            [(ngModel)]="msg.companyId"
+            disabled
+            class="w-full border border-gray-300 rounded p-2"
+          />
+          <label for="companyId" class="text-gray-600">CompanyId</label>
+        </p-floatLabel>
+        <p-floatLabel class="w-2/4">
+          <input
+            pInputText
+            type="text"
+            id="exchangeId"
+            [(ngModel)]="msg.exchangeId"
+            class="w-full border border-gray-300 rounded p-2"
+            disabled
+          />
+          <label for="exchangeId" class="text-gray-600">ExchangeId</label>
+        </p-floatLabel>
+      </div>
+
+      <hr class="my-4" />
+
+      <!-- Send button -->
+      <div class="card flex mt-4">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+          (click)="send()"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </p-dialog>
+</div>

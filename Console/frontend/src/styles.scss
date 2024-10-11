@@ -1,0 +1,22 @@
+/* PrimeNG theme and core styles */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+/* CSS Layer Configuration for Tailwind and PrimeNG */
+@layer tailwind-base, primeng, tailwind-utilities;
+
+/* Base Layer for Tailwind */
+@layer tailwind-base {
+  @tailwind base;
+}
+
+/* PrimeNG Layer (no need to modify as the imports handle this) */
+@layer primeng {
+}
+
+/* Components and Utilities Layer for Tailwind */
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}

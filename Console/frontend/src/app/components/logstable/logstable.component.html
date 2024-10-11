@@ -1,0 +1,324 @@
+<p-table
+  #dt1
+  [value]="brokerLogs"
+  sortField="date"
+  [sortOrder]="-1"
+  [rows]="50"
+  [rowsPerPageOptions]="[50, 100, 200, 500, 1000]"
+  [loading]="loading"
+  [paginator]="true"
+  [globalFilterFields]="['clientId', 'status', 'companyId', 'from', 'destination', 'strDate']"
+  [tableStyle]="{ 'min-width': '60rem' }"
+>
+  <ng-template pTemplate="caption">
+    <div class="flex">
+      <p-button label="Clear" [outlined]="true" icon="pi pi-filter-slash" (onClick)="clear(dt1)" />
+      <p-button icon="pi pi-bell" [outlined]="true" [pTooltip]="tooltipContent" />
+
+      <span class="p-input-icon-left ml-auto">
+        <i class="pi pi-search"></i>
+        <input
+          pInputText
+          type="text"
+          [(ngModel)]="searchValue"
+          (input)="dt1.filterGlobal($event.target.value, 'contains')"
+          placeholder="Search keyword"
+          style="margin-left: 2.25rem"
+        />
+      </span>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr class="custom-header">
+      <th style="width: 3%" pTooltip="Click on arrows to expand" showDelay="400" hideDelay="300">
+        Expand
+      </th>
+      <th pSortableColumn="status" style="min-width: 10rem">
+        <div class="flex align-items-center">
+          Status <p-sortIcon field="status" />
+          <p-columnFilter
+            field="status"
+            matchMode="equals"
+            display="menu"
+            class="filter-icon-margin"
+          >
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown
+                [ngModel]="value"
+                [options]="statuses"
+                (onChange)="filter($event.value)"
+                placeholder="Any"
+              >
+                <ng-template let-option pTemplate="item">
+                  <p-tag [value]="option.value" [severity]="getSeverity(option.label)" />
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="clientId" style="width: 6%">
+        <div class="flex align-items-center">
+          ClientId <p-sortIcon field="clientId" />
+          <p-columnFilter
+            field="clientId"
+            matchMode="equals"
+            display="menu"
+            class="filter-icon-margin"
+          >
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown
+                [ngModel]="value"
+                [options]="clientIds"
+                (onChange)="filter($event.value)"
+                placeholder="Any"
+              >
+                <ng-template let-option pTemplate="item">
+                  {{ option.value }}
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+        </div>
+      </th>
+      <th style="width: 7%">CompanyId</th>
+      <th style="width: 14%">Content</th>
+      <th pSortableColumn="workId" style="min-width: 10rem">
+        <div class="flex align-items-center">
+          WorkId <p-sortIcon field="workId" />
+          <p-columnFilter
+            field="workId"
+            matchMode="equals"
+            display="menu"
+            class="filter-icon-margin"
+          >
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown
+                [ngModel]="value"
+                [options]="workIds"
+                (onChange)="filter($event.value)"
+                placeholder="Any"
+              >
+                <ng-template let-option pTemplate="item">
+                  {{ option.value }}
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="exchangeId" style="min-width: 10rem">
+        <div class="flex align-items-center">
+          ExchangeId <p-sortIcon field="exchangeId" />
+          <p-columnFilter
+            field="exchangeId"
+            matchMode="equals"
+            display="menu"
+            class="filter-icon-margin"
+          >
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown
+                [ngModel]="value"
+                [options]="exchangeIds"
+                (onChange)="filter($event.value)"
+                placeholder="Any"
+              >
+                <ng-template let-option pTemplate="item">
+                  {{ option.value }}
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="destination" style="width: 10%">
+        <div class="flex align-items-center">Destination <p-sortIcon field="destination" /></div>
+      </th>
+
+      <th pSortableColumn="from" style="width: 8%">
+        <div class="flex align-items-center">From <p-sortIcon field="from" /></div>
+      </th>
+      <th pSortableColumn="date" style="width: 24%">
+        <div class="flex align-items-center">
+          Date <p-sortIcon field="date" />
+          <p-columnFilter field="date" display="menu" type="date" class="filter-icon-margin">
+          </p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="transfertTime" style="width: 7%">
+        <div class="flex align-items-center">
+          Transfert Time <p-sortIcon field="transfertTime" />
+        </div>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-log>
+    <tr>
+      <td>
+        <button
+          pButton
+          type="button"
+          icon="pi {{
+            this.expandedLogId === log.mqMsgId ? 'pi-chevron-down' : 'pi-chevron-right'
+          }} "
+          class="p-button-rounded p-button-text"
+          (click)="toggleRow(log)"
+        ></button>
+      </td>
+      <td>
+        <p-tag [value]="log.status" [severity]="getSeverity(log.status)" />
+      </td>
+      <td>{{ log.clientId }}</td>
+      <td>{{ log.companyId }}</td>
+      <td class="hover-cell" style="white-space: nowrap">
+        {{ getReducedMessage(log.content) }}
+        <div
+          class="tooltip-msg"
+          *ngIf="log.content != '' && log.content.length > 20 && messageBoxOnHover"
+        >
+          <div>
+            {{ log.content }}
+          </div>
+        </div>
+      </td>
+      <td>{{ log.exchangeId }}</td>
+      <td>{{ log.workId }}</td>
+      <td class="hover-cell">
+        {{ log.destination }}
+        <div class="tooltip-text" *ngIf="log.destination != '' && displayDestinationInfoOnHover">
+          <h3>Destination Properties</h3>
+          <div>
+            <div>
+              <strong>Host:</strong>
+              {{ getDestinationProps(log.destination).host }}
+            </div>
+            <div *ngIf="getDestinationProps(log.destination).port">
+              <strong>Port:</strong>
+              {{ getDestinationProps(log.destination).port }}
+            </div>
+            <div><strong>QM:</strong> {{ getDestinationProps(log.destination).qm }}</div>
+            <div>
+              <strong>Channel:</strong>
+              {{ getDestinationProps(log.destination).channel }}
+            </div>
+            <div><strong>Q:</strong> {{ getDestinationProps(log.destination).q }}</div>
+            <div>
+              <strong>Protocole:</strong>
+              {{ getDestinationProps(log.destination).protocole }}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td [pTooltip]="isFromWarning(log.from) ? 'The message was sent when the API was down' : ''">
+        <p-tag
+          [value]="log.from"
+          [icon]="getFromIcon(log.from)"
+          [severity]="getFromSeverity(log.from)"
+          *ngIf="log.from != ''"
+        ></p-tag>
+      </td>
+      <td>
+        {{ log.date | date : "dd/MM/yyyy HH:mm:ss" }}
+      </td>
+      <td>
+        <p-tag
+          [value]="getTransfertTime(log.transfertTime, log.status)"
+          [severity]="getTagSeverity(log.transfertTime, log.status)"
+        ></p-tag>
+      </td>
+    </tr>
+
+    <tr *ngIf="this.expandedLogId === log.mqMsgId" class="expanded-row">
+      <td colspan="11">
+        <div class="p-grid p-dir-col">
+          <div class="p-col">
+            <p-table [value]="log.logs" sortMode="multiple">
+              <ng-template pTemplate="header">
+                <tr class="custom-header">
+                  <th pSortableColumn="date" style="min-width: 10rem">
+                    <div class="flex align-items-center">Date <p-sortIcon field="date" /></div>
+                  </th>
+                  <th style="min-width: 10rem">
+                    <div class="flex align-items-center">Message</div>
+                  </th>
+                  <th style="min-width: 10rem">
+                    <div class="flex align-items-center">Status</div>
+                  </th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-log>
+                <tr class="log-row">
+                  <td>{{ getFirstDateFromBrokerLog(log.date) }}</td>
+                  <td>{{ log.msg }}</td>
+                  <td>
+                    <p-tag [value]="log.status" [severity]="getSeverity(log.status)" />
+                  </td>
+                </tr>
+              </ng-template>
+            </p-table>
+            <div class="mt-4" *ngIf="log.status === 'FAILED'">
+              <p-button
+                label="Resend"
+                icon="pi pi-refresh"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                (click)="showDialog(log)"
+              ></p-button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr>
+      <td colspan="7">
+        <div *ngIf="isBrokerUp == false">
+          <p>
+            <strong>Broker is down</strong>
+            <br />
+            Retrying to connect in 10 seconds...
+          </p>
+        </div>
+      </td>
+      <td colspan="7">No records found</td>
+    </tr>
+  </ng-template>
+</p-table>
+<div *ngIf="isBrokerUp == false">
+  <img
+    src="/img/server-down.png"
+    alt="Broker is down"
+    style="
+      position: fixed;
+      z-index: 9999;
+      width: 5em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  />
+</div>
+<app-reroute-dialog
+  [(resentModalVisible)]="resendModalVisible"
+  [(msg)]="resendLog"
+></app-reroute-dialog>
+
+<ng-template #tooltipContent>
+  <div class="flex align-items-center">
+    <span>
+      You can sort columns by clicking on the
+      <i class="pi pi-filter"></i> icon <br /><br />
+      You can filter columns by clicking on the
+      <i class="pi pi-sort-alt"></i> icon <br /><br />
+      You can search the columns by keyword in the
+      <i class="pi pi-search"></i> search bar based on the following fields:
+      <br />
+      <b>'ClientId', 'Status', 'From', 'Destination', 'Text Date'</b>
+      <br /><br />
+      Expand rows by clicking on the <i class="pi pi-chevron-right"></i> icon
+      <br />
+      This will allow you to see all the logs related to the message you expanded and here you'll be
+      able to manually send messages if the message expanded is in a failed state
+    </span>
+  </div>
+</ng-template>

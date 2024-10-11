@@ -1,0 +1,18 @@
+<div class="broker-status-header {{ getHeaderColorClass() }}">
+  <app-sidebar></app-sidebar>
+  <div class="status-content">
+    <div class="vertical-bar"></div>
+    <div class="left-section">
+      <i class="pi pi-database"></i>
+      <span class="status-text">{{ getPearAPiText() }}</span>
+      <p class="latency-text">latency: {{ pearApiStatus.latency }}ms</p>
+    </div>
+    <div class="vertical-bar"></div>
+    <div class="right-section">
+      <i class="pi pi-wifi"></i>
+      <span class="status-text">{{ getStatusText() }}</span>
+      <p class="latency-text">latency: {{ brokerStatus.latency }}ms</p>
+    </div>
+    <div class="vertical-bar"></div>
+  </div>
+</div>

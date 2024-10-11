@@ -1,0 +1,66 @@
+.broker-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &.header-red {
+    background-color: #f54141;
+    color: #fff;
+  }
+
+  &.header-orange {
+    background-color: #ecb54d;
+    color: #fff;
+  }
+
+  &.header-green {
+    background-color: #01aa01a6;
+    color: #fff;
+  }
+
+  app-sidebar {
+    margin-right: auto; /* Push sidebar to the left */
+  }
+
+  .status-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vertical-bar {
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+
+  .left-section,
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  i {
+    margin-right: 0.5rem;
+    color: #fff; /* White icon color for contrast */
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+}

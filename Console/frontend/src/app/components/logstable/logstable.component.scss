@@ -1,0 +1,64 @@
+.custom-header {
+  background-color: #f9f9f900;
+  color: #ffffff;
+}
+
+.expanded-row {
+  margin: 100px;
+  background-color: #f1f1f1;
+}
+
+.expanded-row th {
+  background-color: #f1f1f1;
+}
+
+.hover-cell {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tooltip-text {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 300px;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  top: -90px;
+  left: 100px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hover-cell:hover .tooltip-text {
+  visibility: block;
+  display: block;
+  opacity: 1;
+}
+
+.tooltip-msg {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  max-width: 700px;
+  font-size: 11px;
+  white-space: nowrap;
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 100px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hover-cell:hover .tooltip-msg {
+  visibility: block;
+  display: block;
+  opacity: 1;
+}

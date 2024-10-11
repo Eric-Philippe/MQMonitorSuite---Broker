@@ -1,0 +1,20 @@
+1726834687 INFO ID:414d51204332303220202020202020206324a1661f05594a Broker received a message ;clientId=EPE002;companyId=;workId=;exchangeId=;content=Salut Ca va ? Bien et toi ? Moi Très bien merci
+1726834687 INFO ID:414d51204332303220202020202020206324a1661f05594a Completed forwarding message ;clientId=EPE002;transfertTime=45000000;destination=EPETGT2;from=API
+1726838109 INFO ID:414d51204332303220202020202020206324a16611585b4a Broker received a message ;clientId=EPE004;companyId=;workId=;exchangeId=;content=Saluut
+1726838109 ERROR ID:414d51204332303220202020202020206324a16611585b4a Failed forwarding message with error: No route found for the message with the clientId=EPE004
+1726840755 INFO ID:414d51204332303220202020202020206324a1662e21534a Broker received a message ;clientId=EPE001;companyId=;workId=;exchangeId=;content=Saluut
+1726840755 INFO ID:414d51204332303220202020202020206324a1662e21534a Completed forwarding message ;clientId=EPE001;transfertTime=36500;destination=EPETGT1;from=File
+1728138042 INFO ID:414d51204332303220202020202020206324a1660386504d Broker received a message ;clientId=EPE001;companyId=DIDA00000;workId=FR201805598484;exchangeId=E032;content=Woaaaaaah ça marche si bien
+1728138042 INFO ID:414d51204332303220202020202020206324a1660386504d Completed forwarding message ;clientId=EPE001;transfertTime=1505500;destination=EPETGT1;from=API
+1728381593 INFO ID:414d51204332303220202020202020206324a16650f2cd4d Broker received a message ;clientId=EPE001;companyId=;workId=;exchangeId=;content=Woaaaaaah
+1728381594 INFO ID:414d51204332303220202020202020206324a16650f2cd4d Completed forwarding message ;clientId=EPE001;transfertTime=450;destination=EPETGT1;from=Memory
+1728466813 INFO ID:414d51204332303220202020202020206324a16611585b4a A new try attempt for routing this message has ben scheduled by: ephilipp
+1728466813 INFO ID:414d51204332303220202020202020206324a16611585b4a Completed forwarding message after a new try attempt ;transfertTime=1632126270;destination=EPETGT1;from=Manual
+1728476400 INFO ID:414d51204332303220202020202020206324a1660eee034e Broker received a message ;clientId=EPE005;companyId=DIDO00000;workId=FR201853498187;exchangeId=E035;content=Woaaaaah incroyable je sais pas encore trop ce que j'écris mais pas de soucis
+1728476400 ERROR ID:414d51204332303220202020202020206324a1660eee034e Failed forwarding message with error: No route found for the message with the clientId=EPE005
+1728476416 INFO ID:414d51204332303220202020202020206324a1662bd6034e Broker received a message ;clientId=EPE005;companyId=DIDO00000;workId=FR201853498187;exchangeId=E035;content=Woaaaaah incroyable je sais pas encore trop ce que j'écris mais pas de soucis
+1728476416 ERROR ID:414d51204332303220202020202020206324a1662bd6034e Failed forwarding message with error: No route found for the message with the clientId=EPE005
+1728479769 INFO ID:414d51204332303220202020202020206324a1662bd6034e A new try attempt for routing this message has ben scheduled by: ephilipp
+1728479770 INFO ID:414d51204332303220202020202020206324a1662bd6034e Completed forwarding message after a new try attempt ;transfertTime=3353557;destination=EPETGT2;from=Manual
+1728545760 INFO ID:414d51204332303220202020202020206324a1660eee034e A new try attempt for routing this message has ben scheduled by: ephilipp
+1728545760 ERROR ID:414d51204332303220202020202020206324a1660eee034e Failed forwarding message with error: No route found for the message with the clientId=EPE005
